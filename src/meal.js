@@ -1,5 +1,5 @@
 function nameMenuItem(name) {
-  return `Delicious ${name}`;
+  return `Delicious ${name}`
 }
 
 function createMenuItem(name, price, type) {
@@ -7,22 +7,22 @@ function createMenuItem(name, price, type) {
     name: name,
     price: price,
     type: type,
-  };
-  return menuItem;
+  }
+  return menuItem
 }
 
-function addIngredients(topping, ingredients){
+function addIngredients(topping, ingredients) {
   if(!ingredients.includes(topping)) {
     ingredients.push(topping)
     return ingredients
   }
 }
 
-function formatPrice(price){
+function formatPrice(price) {
   return `$${price}`
 }
 
-function decreasePrice(price){
+function decreasePrice(price) {
   return price - (price * .10)
 }
 
@@ -32,7 +32,7 @@ function createRecipe(title, ingredients, type) {
     ingredients: ingredients,
     type: type,
   }
-  return recipe;
+  return recipe
 }
 
 module.exports = {
